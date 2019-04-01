@@ -6,8 +6,13 @@ This six hour workshop should prepare you to tackle the world of front-end React
 
 ```
 npm install
-npm start
+```
 
+```
+npm start
+```
+
+```
 // Run tests
 npm run tests
 ```
