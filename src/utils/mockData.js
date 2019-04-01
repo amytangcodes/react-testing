@@ -4,14 +4,14 @@ export const mockPikaData = {
     types: [
       {
         type: {
-          name: "electric",
-        },
-      },
+          name: "electric"
+        }
+      }
     ],
     sprites: {
-      front_default: "path/to/img",
-    },
-  },
+      front_default: "path/to/img"
+    }
+  }
 };
 
 export const mockGolemData = {
@@ -20,17 +20,17 @@ export const mockGolemData = {
     types: [
       {
         type: {
-          name: "rock",
-        },
+          name: "rock"
+        }
       },
       {
         type: {
-          name: "ground",
-        },
-      },
+          name: "ground"
+        }
+      }
     ],
     sprites: {
-      front_default: "path/to/img",
-    },
-  },
+      front_default: "path/to/img"
+    }
+  }
 };

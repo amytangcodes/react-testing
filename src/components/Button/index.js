@@ -55,14 +55,15 @@ export const Button = memo(function Button(props) {
       id={id}
       data-testid={id}
       onClick={handleClick}
-      disabled={isDisabled}>
+      disabled={isDisabled}
+    >
       {children}
     </StyledButton>
   );
 });
 
 Button.defaultProps = {
-  disabled: false,
+  disabled: false
 };
 
 Button.propTypes = {
@@ -71,6 +72,6 @@ Button.propTypes = {
   id: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
+    PropTypes.node
+  ]).isRequired
 };

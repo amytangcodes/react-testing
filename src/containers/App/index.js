@@ -7,7 +7,7 @@ import { Global, css } from "@emotion/core";
 const GlobalStyles = css`
   html,
   body {
-    background-color: #eb2f06;
+    background-color: #feca57;
     font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1920 - 300)));
   }
 `;
@@ -34,12 +34,12 @@ const App = () => {
           handleChange,
           handleSubmit,
           isDisabled,
-          searchInputValue,
+          searchInputValue
         }}
       />
       <AppStyles.CharacterDisplay>
         {submittedValueState ? (
-          <SinglePokemonContainer pokemonName={searchInputValue} />
+          <SinglePokemonContainer pokemonName={submittedValueState} />
         ) : null}
       </AppStyles.CharacterDisplay>
     </AppStyles.Layout>

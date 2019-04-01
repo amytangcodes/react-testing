@@ -16,14 +16,15 @@ export async function fetchPokemon(
 }
 
 export const SinglePokemonContainer = ({ pokemonName }) => {
-  const [isLoading, onLoadingStateChange] = useState(true);
+  const [isLoading, onLoadingStateChange] = useState(true); // hooks
   const [pokemon, onPokemonDataLoad] = useState({});
   useEffect(() => {
+    // like componentDidMount..
     fetchPokemon(pokemonName, onLoadingStateChange, onPokemonDataLoad);
   }, [pokemonName]);
   return isLoading ? <div>Loading</div> : <PokemonCard {...{ pokemon }} />;
 };
 
 SinglePokemonContainer.propTypes = {
-  pokemonName: PropTypes.string.isRequired,
+  pokemonName: PropTypes.string.isRequired
 };

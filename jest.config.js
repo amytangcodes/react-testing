@@ -5,5 +5,5 @@ require("@babel/preset-react");
 module.exports = {
   collectCoverageFrom: ["src/**/*.js"],
   testRegex: "./*\\.test\\.js$",
-  snapshotSerializers: ["jest-emotion"],
+  snapshotSerializers: ["jest-emotion"]
 };

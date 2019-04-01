@@ -24,7 +24,7 @@ export const FormContainer = ({
   handleMultiple,
   handleSubmit,
   isDisabled,
-  searchInputValue,
+  searchInputValue
 }) => {
   return (
     <PokePickerForm onSubmit={e => e.preventDefault()}>
@@ -39,7 +39,8 @@ export const FormContainer = ({
         <Button
           id="single-search-button"
           handleClick={handleSubmit}
-          isDisabled={isDisabled}>
+          isDisabled={isDisabled}
+        >
           Search
         </Button>
       </PokePickerFormButtonWrapper>
@@ -48,12 +49,12 @@ export const FormContainer = ({
 };
 
 FormContainer.defaultProps = {
-  isDisabled: true,
+  isDisabled: true
 };
 
 FormContainer.propTypes = {
   handleChange: PropTypes.func.isRequired,
   handleSubmit: PropTypes.func.isRequired,
   isDisabled: PropTypes.bool,
-  searchInputValue: PropTypes.string.isRequired,
+  searchInputValue: PropTypes.string.isRequired
 };
